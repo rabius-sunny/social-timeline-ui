@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Murecho', sans-serif;
+  font-optical-sizing: auto;
+}
+
+@layer base {
+  .action {
+    @apply flex items-center justify-center gap-1.5 text-sm font-medium text-black/80 hover:bg-slate-100 duration-100 px-4 py-1 w-full rounded;
+  }
+}
+
+@layer components {
+  h1,
+  p {
+    @apply text-black tracking-wide;
+  }
+}
+@layer utilities {
+  .container {
+    @apply max-w-md;
+  }
+}
+
+.btn {
+  @apply px-4 py-1.5 rounded-lg;
+}
+
+.c-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.c-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.c-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: lightgray;
+}
